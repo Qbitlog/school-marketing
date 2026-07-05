@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School OS — Smarter Management. Stronger Schools.</title>
+  <meta name="description"
+    content="School OS automates admin tasks, simplifies communication, and connects your entire school community — so you can focus on what truly matters: education." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3 29 9.5v3L16 19 3 12.5v-3L16 3Z" fill="#4F46E5" />
+          <path d="M3 14.5 16 21l13-6.5v6L16 29 3 20.5v-6Z" fill="#818CF8" />
+          <circle cx="27" cy="6" r="2.5" fill="#F59E0B" />
+        </svg>
+        <span class="logo__text">School OS</span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <!-- <li class="nav__item">
+            <a href="#modules" class="nav__link nav__link--has-caret">Features
+              <svg class="nav__caret" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="m2.5 4.5 3.5 3.5 3.5-3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li> -->
+          <li class="nav__item"><a href="#modules" class="nav__link">Modules</a></li>
+          <li class="nav__item"><a href="#benefits" class="nav__link">Benefits</a></li>
+          <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="#" class="nav__login">Log in
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#contact" data-package="demo" class="btn btn--primary">Book a Demo
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <button class="header__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+        aria-controls="site-nav">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__badge">All-in-One School Management System</span>
+          <h1 class="hero__title">
+            Smarter Management.<br />
+            <span class="hero__title-accent">Stronger Schools.</span><br />
+            Better
+            <span class="hero__underline">Future.
+              <svg viewBox="0 0 180 14" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M4 10C40 3 120 2 176 8" stroke="#4F46E5" stroke-width="5" stroke-linecap="round" />
+              </svg>
+            </span>
+          </h1>
+          <p class="hero__text">
+            School OS automates admin tasks, simplifies communication, and connects
+            your entire school community—so you can focus on what truly matters: education.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" data-package="demo" class="btn btn--primary btn--lg">Book a Demo
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#" class="btn btn--ghost btn--lg">
+              <svg class="btn__play" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.5" />
+                <path d="M8 6.8v6.4l5.2-3.2L8 6.8Z" fill="currentColor" />
+              </svg>
+              Watch Video
+            </a>
+          </div>
+          <ul class="hero__chips">
+            <li class="hero__chip">
+              <svg class="hero__chip-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 2 3.5 4.5v5c0 4 2.8 7 6.5 8.5 3.7-1.5 6.5-4.5 6.5-8.5v-5L10 2Z" stroke="currentColor"
+                  stroke-width="1.5" stroke-linejoin="round" />
+                <path d="m7.3 10 2 2 3.4-3.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              Secure &amp; Reliable
+            </li>
+            <li class="hero__chip">
+              <svg class="hero__chip-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M6 15a4 4 0 0 1-.5-7.97A5.5 5.5 0 0 1 16.2 8.6 3.5 3.5 0 0 1 15 15H6Z" stroke="currentColor"
+                  stroke-width="1.5" stroke-linejoin="round" />
+              </svg>
+              Cloud Based
+            </li>
+            <li class="hero__chip">
+              <svg class="hero__chip-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
+                <path d="M6.8 12s1.2 1.5 3.2 1.5 3.2-1.5 3.2-1.5" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+                <circle cx="7.2" cy="8" r="1" fill="currentColor" />
+                <circle cx="12.8" cy="8" r="1" fill="currentColor" />
+              </svg>
+              Easy to Use
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__screen">
+            <img src="assets/business.png" alt="School OS admin dashboard with analytics overview"
+              class="hero__screen-img" />
+          </div>
+          <div class="hero__phone">
+            <img src="assets/mobile.png" alt="School OS mobile app dashboard" class="hero__phone-img" />
+          </div>
+          <svg class="hero__plane" viewBox="0 0 80 60" fill="none" aria-hidden="true">
+            <path d="M2 44C24 40 52 26 74 6" stroke="#4F46E5" stroke-width="1.5" stroke-dasharray="4 5"
+              stroke-linecap="round" />
+            <path d="m74 6-14 3.5 6.5 4.5L74 6Zm0 0-7.5 8 2 6L74 6Z" fill="#4F46E5" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUSTED BAR ============
+    <section class="trusted">
+      <div class="container">
+        <div class="trusted__card">
+          <p class="trusted__label">Trusted by <strong>500+</strong><br />schools across the globe</p>
+          <ul class="trusted__list">
+            <li class="trusted__item">
+              <span class="trusted__crest trusted__crest--green">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M10 1.5 17 4v5.5c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V4l7-2.5Z" fill="currentColor" />
+                  <path d="M10 5v9M6.5 7.5 10 9.8l3.5-2.3" stroke="#fff" stroke-width="1.2" />
+                </svg>
+              </span>
+              <span class="trusted__name"><strong>Greenfield</strong><small>International School</small></span>
+            </li>
+            <li class="trusted__item">
+              <span class="trusted__crest trusted__crest--red">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path
+                    d="M10 2c.6 2.4 2 3.6 4 4-1 1.6-1.2 3.2-.6 5-1.6-.4-2.8 0-3.4 1.4C9.4 11 8.2 10.6 6.6 11c.6-1.8.4-3.4-.6-5 2-.4 3.4-1.6 4-4Z"
+                    fill="currentColor" />
+                  <path d="M10 12v6" stroke="currentColor" stroke-width="1.4" />
+                </svg>
+              </span>
+              <span class="trusted__name"><strong>Maple Leaf</strong><small>Academy</small></span>
+            </li>
+            <li class="trusted__item">
+              <span class="trusted__crest trusted__crest--navy">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M10 4v3M10 13v3M4 10h3M13 10h3M6 6l2 2M12 12l2 2M14 6l-2 2M8 12l-2 2" stroke="currentColor"
+                    stroke-width="1.3" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="trusted__name"><strong>Sunrise</strong><small>Public School</small></span>
+            </li>
+            <li class="trusted__item">
+              <span class="trusted__crest trusted__crest--slate">
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                  <path d="M3 17V8l7-5 7 5v9" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                  <path d="M7 17v-5h6v5M3 17h14" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="trusted__name"><strong>Cambridge</strong><small>International School</small></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- ============ MODULES ============ -->
+    <section class="modules" id="modules">
+      <div class="container modules__inner">
+        <div class="modules__intro">
+          <span class="eyebrow">Powerful Modules</span>
+          <h2 class="modules__title">Everything your school needs,<br />in one <span
+              class="text-accent">intelligent</span> platform.</h2>
+          <p class="modules__text">
+            From academics to administration, School OS has every module
+            to streamline your operations effortlessly.
+          </p>
+          <div class="modules__illustration">
+            <img src="assets/school.png" alt="3D illustration of a school building" />
+          </div>
+        </div>
+
+        <div class="modules__grid">
+          <article class="modules__card">
+            <div class="modules__card-head">
+              <span class="modules__icon modules__icon--indigo">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M3.5 19c.6-3 2.8-4.5 5.5-4.5s4.9 1.5 5.5 4.5" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                  <circle cx="16.5" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M16 14.7c2.3.1 4 1.4 4.5 3.8" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 class="modules__card-title">Student Management</h3>
+            </div>
+            <p class="modules__card-text">Manage student data, admissions, attendance, behavior, and more.</p>
+            <a href="#" class="modules__link">Learn more
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="modules__card">
+            <div class="modules__card-head">
+              <span class="modules__icon modules__icon--green">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="10" cy="8" r="3.2" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M4 19c.6-3 3-4.5 6-4.5 1.2 0 2.3.2 3.2.7" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                  <path d="m14.5 17 1.8 1.8 3.2-3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <h3 class="modules__card-title">Teacher Management</h3>
+            </div>
+            <p class="modules__card-text">Organize teacher information, schedules, leaves and performance.</p>
+            <a href="#" class="modules__link">Learn more
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="modules__card">
+            <div class="modules__card-head">
+              <span class="modules__icon modules__icon--orange">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 5.5C10.5 4.3 8.5 4 6 4c-1 0-2 .1-2.8.3V19c.8-.2 1.8-.3 2.8-.3 2.5 0 4.5.3 6 1.5 1.5-1.2 3.5-1.5 6-1.5 1 0 2 .1 2.8.3V4.3C20 4.1 19 4 18 4c-2.5 0-4.5.3-6 1.5Z"
+                    stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                  <path d="M12 5.5v14.7" stroke="currentColor" stroke-width="1.7" />
+                </svg>
+              </span>
+              <h3 class="modules__card-title">Academics</h3>
+            </div>
+            <p class="modules__card-text">Create classes, manage subjects, timetables, exams and grades.</p>
+            <a href="#" class="modules__link">Learn more
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="modules__card">
+            <div class="modules__card-head">
+              <span class="modules__icon modules__icon--blue">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7" />
+                  <path
+                    d="M14.8 8.8c-.5-.9-1.5-1.4-2.8-1.4-1.6 0-2.8.8-2.8 2.1 0 2.9 5.8 1.5 5.8 4.4 0 1.4-1.3 2.2-3 2.2-1.4 0-2.5-.6-3-1.6M12 5.8v1.6M12 16.1v1.7"
+                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 class="modules__card-title">Finance Management</h3>
+            </div>
+            <p class="modules__card-text">Automate fee collection, expenses, invoices and financial reports.</p>
+            <a href="#" class="modules__link">Learn more
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="modules__card">
+            <div class="modules__card-head">
+              <span class="modules__icon modules__icon--pink">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6.5C4 4.6 5.6 4 12 4s8 .6 8 2.5V16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5Z"
+                    stroke="currentColor" stroke-width="1.7" />
+                  <path d="M4 12h16M4 8h16" stroke="currentColor" stroke-width="1.7" />
+                  <circle cx="8" cy="15" r="1.1" fill="currentColor" />
+                  <circle cx="16" cy="15" r="1.1" fill="currentColor" />
+                  <path d="M7 18.5 5.8 21M17 18.5l1.2 2.5" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 class="modules__card-title">Transport &amp; Hostel</h3>
+            </div>
+            <p class="modules__card-text">Manage transport routes, vehicles, hostel rooms and allocations.</p>
+            <a href="#" class="modules__link">Learn more
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="modules__card">
+            <div class="modules__card-head">
+              <span class="modules__icon modules__icon--purple">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M18 5 7 9H4.5A1.5 1.5 0 0 0 3 10.5v3A1.5 1.5 0 0 0 4.5 15H7l11 4V5Z" stroke="currentColor"
+                    stroke-width="1.7" stroke-linejoin="round" />
+                  <path d="M8 15.5V19a1.5 1.5 0 0 0 3 0v-2.5M20.5 10.5v3" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <h3 class="modules__card-title">Communication</h3>
+            </div>
+            <p class="modules__card-text">Send notices, alerts and messages to students, parents and staff.</p>
+            <a href="#" class="modules__link">Learn more
+              <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUILT FOR EVERYONE ============ -->
+    <section class="roles" id="benefits">
+      <div class="container roles__inner">
+        <div class="roles__intro">
+          <span class="eyebrow">Built for Everyone</span>
+          <h2 class="roles__title">One Platform.<br />Every Role.<br />Endless <span
+              class="text-accent">Possibilities</span>.</h2>
+          <p class="roles__text">
+            School OS is designed to meet the unique needs of every user
+            in your school community.
+          </p>
+          <a href="#modules" class="btn btn--primary">Explore All Features
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="roles__grid">
+          <article class="roles__card roles__card--admins">
+            <div class="roles__card-top">
+              <span class="roles__icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M4 18.5c.5-2.8 2.5-4.3 5-4.3s4.5 1.5 5 4.3" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                  <circle cx="16.5" cy="9.5" r="2.2" stroke="currentColor" stroke-width="1.7" />
+                  <path d="M16 14.5c2 .1 3.6 1.3 4 3.4" stroke="currentColor" stroke-width="1.7"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <img src="assets/admin.png" alt="School administrator" class="roles__photo" />
+            </div>
+            <h3 class="roles__card-title">For Admins</h3>
+            <ul class="roles__list">
+              <li class="roles__list-item">Complete control</li>
+              <li class="roles__list-item">Real-time insights</li>
+              <li class="roles__list-item">Data-driven decisions</li>
+              <li class="roles__list-item">Streamlined operations</li>
+            </ul>
+          </article>
+
+          <article class="roles__card roles__card--teachers">
+            <div class="roles__card-top">
+              <span class="roles__icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 5h16v10H4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                  <path d="M8 8h5M8 11h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                  <path d="m9 19 3-4 3 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <img src="assets/teacher.png" alt="Teacher holding a tablet" class="roles__photo" />
+            </div>
+            <h3 class="roles__card-title">For Teachers</h3>
+            <ul class="roles__list">
+              <li class="roles__list-item">Easy class management</li>
+              <li class="roles__list-item">Track student progress</li>
+              <li class="roles__list-item">Manage assignments</li>
+              <li class="roles__list-item">Save time &amp; effort</li>
+            </ul>
+          </article>
+
+          <article class="roles__card roles__card--students">
+            <div class="roles__card-top">
+              <span class="roles__icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="m12 4-9 4 9 4 9-4-9-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                  <path d="M6.5 10.5V15c0 1.2 2.5 2.5 5.5 2.5s5.5-1.3 5.5-2.5v-4.5M21 8v5" stroke="currentColor"
+                    stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <img src="assets/student.png" alt="Student with backpack holding books" class="roles__photo" />
+            </div>
+            <h3 class="roles__card-title">For Students</h3>
+            <ul class="roles__list">
+              <li class="roles__list-item">Access assignments</li>
+              <li class="roles__list-item">View results &amp; timetable</li>
+              <li class="roles__list-item">Stay organized</li>
+              <li class="roles__list-item">Track achievements</li>
+            </ul>
+          </article>
+
+          <article class="roles__card roles__card--parents">
+            <div class="roles__card-top">
+              <span class="roles__icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M12 20s-7-4.2-9-8.6C1.6 8 3.6 5 6.7 5c2 0 3.6 1 4.3 2.6.1.3.5.3.6 0C12.3 6 13.9 5 15.9 5c3.1 0 5.1 3 3.7 6.4-1.9 4.4-7.6 8.6-7.6 8.6Z"
+                    stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <img src="assets/parent.png" alt="Parent smiling" class="roles__photo" />
+            </div>
+            <h3 class="roles__card-title">For Parents</h3>
+            <ul class="roles__list">
+              <li class="roles__list-item">Track child progress</li>
+              <li class="roles__list-item">Receive real-time updates</li>
+              <li class="roles__list-item">Stay informed</li>
+              <li class="roles__list-item">Connect with teachers</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <span class="eyebrow eyebrow--center">Simple Pricing</span>
+        <h2 class="pricing__title">Plans that scale with your <span class="text-accent">school</span></h2>
+        <p class="pricing__text">Choose the right plan based on your student strength. All plans include core modules
+          and
+          cloud hosting.</p>
+
+        <div class="pricing__grid">
+          <article class="pricing__card">
+            <h3 class="pricing__plan">Starter</h3>
+            <p class="pricing__target">Up to 200 students</p>
+            <p class="pricing__price">
+              <span class="pricing__currency">₹</span>999
+              <span class="pricing__period">/month</span>
+            </p>
+            <a href="#contact" data-package="starter" class="btn btn--ghost pricing__cta">Get Started</a>
+          </article>
+
+          <article class="pricing__card pricing__card--featured">
+            <span class="pricing__badge">Most Popular</span>
+            <h3 class="pricing__plan">Growth</h3>
+            <p class="pricing__target">Up to 1,000 students</p>
+            <p class="pricing__price">
+              <span class="pricing__currency">₹</span>2,999
+              <span class="pricing__period">/month</span>
+            </p>
+            <a href="#contact" data-package="growth" class="btn btn--primary pricing__cta">Get Started</a>
+          </article>
+
+          <article class="pricing__card">
+            <h3 class="pricing__plan">Premium</h3>
+            <p class="pricing__target">Up to 5,000 students</p>
+            <p class="pricing__price">
+              <span class="pricing__currency">₹</span>4,999
+              <span class="pricing__period">/month</span>
+            </p>
+            <a href="#contact" data-package="premium" class="btn btn--ghost pricing__cta">Get Started</a>
+          </article>
+
+          <article class="pricing__card pricing__card--enterprise">
+            <h3 class="pricing__plan">Enterprise</h3>
+            <p class="pricing__target">School chains</p>
+            <p class="pricing__price pricing__price--custom">Custom</p>
+            <a href="#contact" data-package="enterprise" class="btn btn--ghost pricing__cta">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__content">
+          <span class="eyebrow">About Us</span>
+          <h2 class="about__title">Built by <span class="text-accent">QBITLOG</span></h2>
+          <p class="about__text">
+            School OS is crafted by <a href="https://www.qbitlog.com/" class="about__link" target="_blank"
+              rel="noopener noreferrer">QBITLOG</a> — a New Delhi–based digital studio focused on crafting
+            innovative web, mobile, and AI-powered solutions that transform businesses and delight users.
+          </p>
+          <p class="about__text">
+            With a client-focused approach and innovation-driven mindset, QBITLOG delivers reliable, secure, and
+            fairly priced software. From discovery to deployment, every project is handled with clear communication,
+            honest timelines, and measurable results.
+          </p>
+          <a href="https://www.qbitlog.com/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+            Visit QBITLOG
+            <svg class="icon-arrow" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10m0 0-4-4m4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="about__aside">
+          <div class="about__brand">
+            <span class="about__logo" aria-hidden="true">Q</span>
+            <div class="about__brand-info">
+              <strong class="about__brand-name">QBITLOG</strong>
+              <small class="about__brand-tagline">Crafting Digital Excellence</small>
+            </div>
+          </div>
+
+          <ul class="about__stats">
+            <li class="about__stat">
+              <strong class="about__stat-value">50+</strong>
+              <span class="about__stat-label">Projects Delivered</span>
+            </li>
+            <li class="about__stat">
+              <strong class="about__stat-value">50+</strong>
+              <span class="about__stat-label">Happy Clients</span>
+            </li>
+          </ul>
+
+          <ul class="about__highlights">
+            <li class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3 3 7.5v9L12 21l9-4.5v-9L12 3Z" stroke="currentColor" stroke-width="1.7"
+                    stroke-linejoin="round" />
+                  <path d="m8.5 12 2.5 2.5L15.5 10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span>Client-focused, tailored solutions</span>
+            </li>
+            <li class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"
+                    stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span>Innovation-driven development</span>
+            </li>
+            <li class="about__highlight">
+              <span class="about__highlight-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M10 2 3.5 4.5v5c0 4 2.8 7 6.5 8.5 3.7-1.5 6.5-4.5 6.5-8.5v-5L10 2Z" stroke="currentColor"
+                    stroke-width="1.7" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span>Reliable delivery &amp; robust security</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <span class="eyebrow eyebrow--center">What Schools Are Saying</span>
+        <h2 class="testimonials__title">Loved by Schools. Trusted by Educators.</h2>
+
+        <div class="testimonials__carousel" id="testimonials-carousel">
+          <button class="testimonials__arrow testimonials__arrow--prev" data-carousel-prev
+            aria-label="Previous testimonial">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="testimonials__viewport">
+            <div class="testimonials__track" data-carousel-track>
+              <figure class="testimonials__slide">
+                <span class="testimonials__quote-mark" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonials__quote">
+                  School OS has transformed the way we manage our school. From attendance to fee collection,
+                  everything is now simple, fast and transparent.
+                </blockquote>
+                <figcaption class="testimonials__author">
+                  <img src="assets/admin.png" alt="" class="testimonials__avatar" />
+                  <span class="testimonials__author-info">
+                    <strong class="testimonials__name">John Mathew</strong>
+                    <small class="testimonials__role">Principal, Greenfield International School</small>
+                  </span>
+                </figcaption>
+              </figure>
+
+              <figure class="testimonials__slide">
+                <span class="testimonials__quote-mark" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonials__quote">
+                  Planning lessons, tracking progress and sharing assignments now takes minutes instead of hours.
+                  School OS gives me my evenings back.
+                </blockquote>
+                <figcaption class="testimonials__author">
+                  <img src="assets/teacher.png" alt="" class="testimonials__avatar" />
+                  <span class="testimonials__author-info">
+                    <strong class="testimonials__name">Sarah Fernandes</strong>
+                    <small class="testimonials__role">Academic Coordinator, Maple Leaf Academy</small>
+                  </span>
+                </figcaption>
+              </figure>
+
+              <figure class="testimonials__slide">
+                <span class="testimonials__quote-mark" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonials__quote">
+                  I can check my timetable, assignments and results from my phone. Staying on top of school
+                  work has never been this easy.
+                </blockquote>
+                <figcaption class="testimonials__author">
+                  <img src="assets/student.png" alt="" class="testimonials__avatar" />
+                  <span class="testimonials__author-info">
+                    <strong class="testimonials__name">Aarav Sharma</strong>
+                    <small class="testimonials__role">Student, Sunrise Public School</small>
+                  </span>
+                </figcaption>
+              </figure>
+
+              <figure class="testimonials__slide">
+                <span class="testimonials__quote-mark" aria-hidden="true">&ldquo;</span>
+                <blockquote class="testimonials__quote">
+                  Real-time updates about my daughter's attendance, fees and results keep me connected with the
+                  school without a single phone call.
+                </blockquote>
+                <figcaption class="testimonials__author">
+                  <img src="assets/parent.png" alt="" class="testimonials__avatar" />
+                  <span class="testimonials__author-info">
+                    <strong class="testimonials__name">Priya Nair</strong>
+                    <small class="testimonials__role">Parent, Cambridge International School</small>
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <button class="testimonials__arrow testimonials__arrow--next" data-carousel-next
+            aria-label="Next testimonial">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="m6 3 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="testimonials__dots" data-carousel-dots role="tablist" aria-label="Testimonial slides"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact__banner">
+          <img src="assets/hat.png" alt="" class="contact__hat" aria-hidden="true" />
+          <div class="contact__intro">
+            <span class="eyebrow contact__eyebrow">Get in Touch</span>
+            <h2 class="contact__title">Ready to <span class="contact__title-accent">Transform</span><br />Your School?
+            </h2>
+            <p class="contact__text">
+              Fill out the form and our team will get back to you within 24 hours.
+              Join hundreds of schools using School OS to work smarter and save time.
+            </p>
+          </div>
+
+
+
+          <form class="contact__form" id="contact-form" novalidate>
+            <div class="contact__field">
+              <label class="contact__label" for="contact-name">Your Name</label>
+              <input class="contact__input" type="text" id="contact-name" name="name" autocomplete="name" required
+                placeholder="John Mathew" />
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="contact-email">Email Address</label>
+              <input class="contact__input" type="email" id="contact-email" name="email" autocomplete="email" required
+                placeholder="you@school.edu" />
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="contact-phone">Phone Number</label>
+              <input class="contact__input" type="tel" id="contact-phone" name="phone" autocomplete="tel" required
+                placeholder="+91 98765 43210" />
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="contact-school">School Name</label>
+              <input class="contact__input" type="text" id="contact-school" name="school" autocomplete="organization"
+                required placeholder="Greenfield International School" />
+            </div>
+            <div class="contact__field contact__field--full">
+              <label class="contact__label" for="contact-package">Package</label>
+              <select class="contact__input contact__select" id="contact-package" name="package" required>
+                <option value="" disabled selected>Select a package</option>
+                <option value="demo">Demo — Request a free product demo</option>
+                <option value="starter">Starter — Up to 200 students (₹999/month)</option>
+                <option value="growth">Growth — Up to 1,000 students (₹2,999/month)</option>
+                <option value="premium">Premium — Up to 5,000 students (₹4,999/month)</option>
+                <option value="enterprise">Enterprise — School chains (Custom)</option>
+              </select>
+            </div>
+            <div class="contact__field contact__field--full">
+              <button type="submit" class="btn btn--white contact__submit">Send Enquiry</button>
+              <p class="contact__success" id="contact-success" hidden role="status">
+                Thank you! We'll be in touch within 24 hours.
+              </p>
+            </div>
+          </form>
+
+          <ul class="contact__stats">
+            <li class="contact__stat">
+              <span class="contact__stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M3 20V9l9-5 9 5v11" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                  <path d="M9 20v-6h6v6M3 20h18" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="contact__stat-info"><strong>500+</strong><small>Schools</small></span>
+            </li>
+            <li class="contact__stat">
+              <span class="contact__stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M4 18.5c.5-2.8 2.5-4.3 5-4.3s4.5 1.5 5 4.3" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                  <circle cx="16.5" cy="9.5" r="2.2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M16 14.5c2 .1 3.6 1.3 4 3.4" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="contact__stat-info"><strong>50,000+</strong><small>Users</small></span>
+            </li>
+            <li class="contact__stat">
+              <span class="contact__stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" />
+                  <path d="m12 7 1.5 3.2 3.5.4-2.6 2.3.7 3.4L12 14.5l-3.1 1.8.7-3.4L7 10.6l3.5-.4L12 7Z"
+                    stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="contact__stat-info"><strong>98%</strong><small>Satisfaction</small></span>
+            </li>
+            <li class="contact__stat">
+              <span class="contact__stat-icon">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 13a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                  <rect x="3" y="13" width="4" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6" />
+                  <rect x="17" y="13" width="4" height="6" rx="1.6" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M19 19v1a2 2 0 0 1-2 2h-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="contact__stat-info"><strong>24/7</strong><small>Support</small></span>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--footer">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 3 29 9.5v3L16 19 3 12.5v-3L16 3Z" fill="#4F46E5" />
+          <path d="M3 14.5 16 21l13-6.5v6L16 29 3 20.5v-6Z" fill="#818CF8" />
+          <circle cx="27" cy="6" r="2.5" fill="#F59E0B" />
+        </svg>
+        <span class="logo__text">School OS</span>
+      </a>
+
+      <p class="footer__copyright">© 2026 School OS. All rights reserved.</p>
+
+      <ul class="footer__links">
+        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+        <li><a href="#" class="footer__link">Terms of Service</a></li>
+        <li><a href="#contact" class="footer__link">Contact Us</a></li>
+      </ul>
+
+      <ul class="footer__social">
+        <li>
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.2-1.5 1.5-1.5h1.4V4.9c-.2 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7V11H8.3v3h2.4v7h2.8Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.2 4h2.7l-5.9 6.8L21 20h-5.4l-4.3-5.6L6.5 20H3.8l6.3-7.2L3.5 4H9l3.9 5.1L17.2 4Zm-1 14.4h1.5L7.9 5.5H6.3l9.9 12.9Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M6.5 8.3H3.7V20h2.8V8.3ZM5.1 7.1a1.7 1.7 0 1 0 0-3.3 1.7 1.7 0 0 0 0 3.3ZM20.3 13c0-3.1-1.7-4.9-4.1-4.9-1.4 0-2.4.7-2.9 1.6V8.3H10.5V20h2.8v-6c0-1.5.7-2.4 2-2.4s2 .9 2 2.4v6h2.9V13Z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="footer__social-link" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M21.6 8s-.2-1.4-.8-2c-.7-.8-1.6-.8-2-.9C16 5 12 5 12 5s-4 0-6.8.1c-.4.1-1.3.1-2 .9-.6.6-.8 2-.8 2S2.2 9.6 2.2 11.3v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.7.8 1.7.8 2.1.9 1.5.1 6.7.2 6.7.2s4 0 6.8-.2c.4-.1 1.3-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5c0-1.7-.2-3.3-.2-3.3ZM10 14.6V9.4l5.2 2.6-5.2 2.6Z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
