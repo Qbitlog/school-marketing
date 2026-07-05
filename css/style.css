@@ -64,6 +64,9 @@ body {
 .roles__grid,
 .pricing__grid,
 .about__inner,
+.contact__banner,
+.contact__form,
+.contact__intro,
 .testimonials__viewport {
 	min-width: 0;
 }
@@ -1568,12 +1571,14 @@ section[id] {
 
 .contact__input {
 	width: 100%;
+	min-height: 48px;
 	padding: 12px 14px;
 	border: 1.5px solid rgba(255, 255, 255, 0.15);
 	border-radius: var(--radius-sm);
 	background: rgba(255, 255, 255, 0.08);
 	color: #fff;
 	font: inherit;
+	font-size: 16px;
 	transition:
 		border-color 0.2s ease,
 		background-color 0.2s ease;
@@ -1596,6 +1601,9 @@ section[id] {
 	background-position: right 14px center;
 	padding-right: 40px;
 	cursor: pointer;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 .contact__select option {
@@ -1605,6 +1613,7 @@ section[id] {
 
 .contact__submit {
 	width: 100%;
+	min-height: 48px;
 }
 
 .contact__success {
@@ -1659,7 +1668,67 @@ section[id] {
 	color: #aab6d6;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 767px) {
+	.contact {
+		padding: 0 0 60px;
+	}
+
+	.contact__banner {
+		width: 100%;
+		padding: 32px 18px 28px;
+		gap: 24px;
+		border-radius: 20px;
+		overflow: hidden;
+	}
+
+	.contact__hat {
+		width: 72px;
+		top: -32px;
+		right: 4px;
+	}
+
+	.contact__title {
+		font-size: clamp(1.5rem, 6.5vw, 1.75rem);
+		padding-right: 64px;
+	}
+
+	.contact__text {
+		max-width: none;
+		font-size: 0.875rem;
+		line-height: 1.55;
+	}
+
+	.contact__form {
+		grid-template-columns: 1fr;
+		gap: 14px;
+	}
+
+	.contact__field--full {
+		grid-column: auto;
+	}
+
+	.contact__stats {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.contact__stat {
+		padding: 14px 16px;
+		border-radius: 12px;
+		background: rgba(255, 255, 255, 0.06);
+	}
+
+	.contact__stat-info strong {
+		font-size: 1.25rem;
+	}
+
+	.contact__stat-icon svg {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+@media (min-width: 768px) {
 	.contact__form {
 		grid-template-columns: repeat(2, 1fr);
 	}
